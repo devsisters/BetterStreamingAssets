@@ -29,7 +29,7 @@ namespace Better.StreamingAssets
         private static string[] BundlesLabels = new string[BundlesTypesCount] { "lzma", "lz4", "uncompressed" };
         private static BuildAssetBundleOptions[] BundlesOptions = new BuildAssetBundleOptions[BundlesTypesCount] { BuildAssetBundleOptions.None, BuildAssetBundleOptions.ChunkBasedCompression, BuildAssetBundleOptions.UncompressedAssetBundle };
 
-        [MenuItem("Assets/Better Streaming Assets/Generate Test Data")]
+        // [MenuItem("Assets/Better Streaming Assets/Generate Test Data")]
         public static void GenerateTestData()
         {
             if (Directory.Exists(TestPath))
@@ -144,7 +144,7 @@ namespace Better.StreamingAssets
         }
 
 
-        [MenuItem("Assets/Better Streaming Assets/Delete Test Data")]
+        // [MenuItem("Assets/Better Streaming Assets/Delete Test Data")]
         public static void DeleteTestData()
         {
             if (Directory.Exists(TestPath))
